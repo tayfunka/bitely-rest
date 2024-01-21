@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "296f378e-e55a-4b73-b64c-6d8250175ce8",
+		"name": "bitely-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28281179"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"bitely_rest_product3\",\n    \"price\":30,\n    \"category\": \"category_2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deaxvle7g1.execute-api.eu-north-1.amazonaws.com/prod/products/",
+					"protocol": "https",
+					"host": [
+						"deaxvle7g1",
+						"execute-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://deaxvle7g1.execute-api.eu-north-1.amazonaws.com/prod/products/",
+					"protocol": "https",
+					"host": [
+						"deaxvle7g1",
+						"execute-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://deaxvle7g1.execute-api.eu-north-1.amazonaws.com/prod/products/0697e7e3-50bc-4c37-a4ab-d4634a542c36",
+					"protocol": "https",
+					"host": [
+						"deaxvle7g1",
+						"execute-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products",
+						"0697e7e3-50bc-4c37-a4ab-d4634a542c36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"bitely_rest_product2_updated\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deaxvle7g1.execute-api.eu-north-1.amazonaws.com/prod/products/0697e7e3-50bc-4c37-a4ab-d4634a542c36",
+					"protocol": "https",
+					"host": [
+						"deaxvle7g1",
+						"execute-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products",
+						"0697e7e3-50bc-4c37-a4ab-d4634a542c36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://deaxvle7g1.execute-api.eu-north-1.amazonaws.com/prod/products/440da234-da38-444b-9bdf-1c5df2932ffd",
+					"protocol": "https",
+					"host": [
+						"deaxvle7g1",
+						"execute-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products",
+						"440da234-da38-444b-9bdf-1c5df2932ffd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
